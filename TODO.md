@@ -5,24 +5,24 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 ## 🏗️ Phase 1: Setup & Environment
 
 ### Project Setup
-- [ ] Inisialisasi project Node.js dengan `npm init`
-- [ ] Setup struktur folder project
-  - [ ] `src/` - Source code utama
-  - [ ] `config/` - File konfigurasi
-  - [ ] `commands/` - Command handlers
-  - [ ] `events/` - Event handlers
-  - [ ] `utils/` - Helper functions
-- [ ] Setup Git repository dan .gitignore
-- [ ] Buat file environment (.env) untuk token dan config
-- [ ] Setup package.json dengan scripts yang dibutuhkan
+- [x] Inisialisasi project Node.js dengan `npm init`
+- [x] Setup struktur folder project
+  - [x] `src/` - Source code utama
+  - [x] `config/` - File konfigurasi
+  - [x] `commands/` - Command handlers
+  - [x] `events/` - Event handlers
+  - [x] `utils/` - Helper functions
+- [x] Setup Git repository dan .gitignore
+- [x] Buat file environment (.env) untuk token dan config
+- [x] Setup package.json dengan scripts yang dibutuhkan
 
 ### Dependencies
-- [ ] Install discord.js (`npm install discord.js`)
-- [ ] Install @discordjs/voice untuk voice connection
-- [ ] Install ffmpeg-static untuk audio processing
-- [ ] Install ytdl-core untuk YouTube streaming
-- [ ] Install play-dl sebagai alternatif ytdl-core
-- [ ] Install dotenv untuk environment variables
+- [x] Install discord.js (`npm install discord.js`)
+- [x] Install @discordjs/voice untuk voice connection
+- [x] Install ffmpeg-static untuk audio processing
+- [x] Install ytdl-core untuk YouTube streaming
+- [x] Install play-dl sebagai alternatif ytdl-core
+- [x] Install dotenv untuk environment variables
 - [ ] Install eslint untuk code quality (optional)
 
 ### Discord Bot Setup
@@ -34,61 +34,61 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 ## 🤖 Phase 2: Core Bot Functionality
 
 ### Basic Bot Structure
-- [ ] Buat main bot file (index.js/app.js)
-- [ ] Implement bot login dengan token
-- [ ] Setup event listeners (ready, messageCreate, interactionCreate)
-- [ ] Buat command handler system
-- [ ] Implement error handling dan logging
+- [x] Buat main bot file (index.js/app.js)
+- [x] Implement bot login dengan token
+- [x] Setup event listeners (ready, messageCreate, interactionCreate)
+- [x] Buat command handler system
+- [x] Implement error handling dan logging
 
 ### Command System
-- [ ] Setup slash commands registration
-- [ ] Buat base command structure/class
-- [ ] Implement command loader
-- [ ] Add help command untuk list semua commands
-- [ ] Add ping command untuk test bot responsiveness
+- [x] Setup slash commands registration
+- [x] Buat base command structure/class
+- [x] Implement command loader
+- [x] Add help command untuk list semua commands
+- [x] Add ping command untuk test bot responsiveness
 
 ## 🎵 Phase 3: Music Streaming Core Features
 
 ### Voice Connection
-- [ ] Implement join voice channel functionality
-- [ ] Implement leave voice channel functionality
-- [ ] Handle voice connection errors
-- [ ] Auto disconnect saat tidak ada user di channel
+- [x] Implement join voice channel functionality
+- [x] Implement leave voice channel functionality
+- [x] Handle voice connection errors
+- [x] Auto disconnect saat tidak ada user di channel
 
 ### Music Queue System
-- [ ] Buat queue data structure untuk menyimpan lagu
-- [ ] Implement add to queue functionality
-- [ ] Implement queue display command
-- [ ] Implement clear queue command
-- [ ] Add queue shuffle functionality
+- [x] Buat queue data structure untuk menyimpan lagu
+- [x] Implement add to queue functionality
+- [x] Implement queue display command
+- [x] Implement clear queue command
+- [x] Add queue shuffle functionality
 
 ### Basic Music Commands
-- [ ] **play** - Play lagu dari URL atau search query
-- [ ] **stop** - Stop musik dan clear queue
-- [ ] **pause** - Pause current song
-- [ ] **resume** - Resume paused song
-- [ ] **skip** - Skip ke lagu berikutnya
-- [ ] **queue** - Tampilkan current queue
-- [ ] **nowplaying** - Tampilkan info lagu yang sedang dimainkan
+- [x] **play** - Play lagu dari URL atau search query
+- [x] **stop** - Stop musik dan clear queue
+- [x] **pause** - Pause current song
+- [x] **resume** - Resume paused song
+- [x] **skip** - Skip ke lagu berikutnya
+- [x] **queue** - Tampilkan current queue
+- [x] **nowplaying** - Tampilkan info lagu yang sedang dimainkan
 
 ## 🎧 Phase 4: Advanced Music Features
 
 ### Audio Sources
-- [ ] Implement YouTube streaming dengan ytdl-core/play-dl
+- [x] Implement YouTube streaming dengan ytdl-core/play-dl
 - [ ] Add Spotify playlist parsing (metadata only, play via YouTube)
 - [ ] Add SoundCloud streaming support
 - [ ] Add direct URL streaming (MP3, etc.)
-- [ ] Implement search functionality untuk find lagu
+- [x] Implement search functionality untuk find lagu
 
 ### Advanced Queue Management
-- [ ] **remove** - Remove specific song dari queue
+- [x] **remove** - Remove specific song dari queue
 - [ ] **move** - Move song position dalam queue
-- [ ] **loop** - Loop current song atau entire queue
+- [x] **loop** - Loop current song atau entire queue
 - [ ] **autoplay** - Auto add related songs ke queue
 - [ ] Save/load playlist functionality
 
 ### Audio Controls
-- [ ] **volume** - Adjust playback volume
+- [x] **volume** - Adjust playback volume
 - [ ] **seek** - Jump ke specific time dalam lagu
 - [ ] **speed** - Adjust playback speed
 - [ ] **bassboost** - Apply audio filters
