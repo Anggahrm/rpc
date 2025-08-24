@@ -18,6 +18,30 @@ const client = new Client({
 client.commandHandler = new CommandHandler();
 client.queueManager = new QueueManager();
 
+// Load event handlers
+async function loadEvents() {
+    const fs = require('fs');
+    const path = require('path');
+    const eventsPath = path.join(__dirname, 'events');
+    
+    if (fs.existsSync(eventsPath)) {
+        const eventFiles = fs.readdirSync(eventsPath).filter(file => file.endsWith('.js'));
+
+        for (const file of eventFiles) {
+            const filePath = path.join(eventsPath, file);
+            const event = require(filePath);
+
+            if (event.once) {
+                client.once(event.name, (...args) => event.execute(...args));
+            } else {
+                client.on(event.name, (...args) => event.execute(...args));
+            }
+            
+            logger.info(`Loaded event: ${event.name}`);
+        }
+    }
+}
+
 // When the client is ready, run this code once
 client.once(Events.ClientReady, async (readyClient) => {
     logger.info(`Ready! Logged in as ${readyClient.user.tag}`);
@@ -25,8 +49,9 @@ client.once(Events.ClientReady, async (readyClient) => {
     // Set bot activity
     client.user.setActivity('music 🎵', { type: ActivityType.Listening });
     
-    // Load commands
+    // Load commands and events
     await client.commandHandler.loadCommands();
+    await loadEvents();
     
     logger.info(`Bot is online and serving ${client.guilds.cache.size} guilds`);
 });

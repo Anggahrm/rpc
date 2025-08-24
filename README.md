@@ -38,9 +38,13 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 - 🤖 **Slash Commands**: Modern Discord slash command support
 - 🎵 **Music Streaming**: Play music from YouTube with URL or search
 - 🔍 **Interactive Search**: Search YouTube with interactive song selection
-- 📋 **Queue Management**: Add, view, and manage music queue with pagination
-- ⏯️ **Playback Controls**: Play, pause, resume, skip, stop
+- 📋 **Advanced Queue Management**: Add, view, manage queue with pagination, shuffle, loop modes
+- ⏯️ **Playback Controls**: Play, pause, resume, skip, stop with real-time status
 - 🔊 **Volume Control**: Adjust playback volume (0-100%)
+- 🎛️ **Loop Modes**: Loop current song, entire queue, or disable looping
+- 🗑️ **Queue Editing**: Remove specific songs, clear queue, shuffle songs
+- 📊 **Statistics**: Bot usage stats and performance monitoring
+- 🤖 **Auto-Disconnect**: Automatically leaves when alone in voice channel
 - 📺 **Rich Embeds**: Beautiful embeds with song information and thumbnails
 - 🏓 **Ping Command**: Test bot responsiveness
 - ❓ **Help Command**: Categorized command listing
@@ -110,6 +114,7 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 ### General Commands
 - `/ping` - Check bot latency and responsiveness
 - `/help` - Show all available commands
+- `/stats` - Show bot statistics and usage information
 
 ### Music Commands
 - `/play <query>` - Play music from YouTube URL or search query
@@ -121,6 +126,10 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 - `/queue [page]` - Show the current music queue
 - `/nowplaying` - Show information about the currently playing song
 - `/volume [level]` - Set or view the current volume (0-100)
+- `/clear` - Clear the queue without stopping current song
+- `/shuffle` - Shuffle the music queue
+- `/loop [mode]` - Toggle loop mode (off/song/queue)
+- `/remove <position>` - Remove a specific song from queue
 
 ### Voice Commands
 - `/join` - Join your voice channel

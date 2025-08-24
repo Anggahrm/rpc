@@ -52,8 +52,8 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 ### Voice Connection
 - [x] Implement join voice channel functionality
 - [x] Implement leave voice channel functionality
-- [ ] Handle voice connection errors
-- [ ] Auto disconnect saat tidak ada user di channel
+- [x] Handle voice connection errors
+- [x] Auto disconnect saat tidak ada user di channel
 
 ### Music Queue System
 - [x] Buat queue data structure untuk menyimpan lagu
@@ -81,9 +81,9 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 - [x] Implement search functionality untuk find lagu
 
 ### Advanced Queue Management
-- [ ] **remove** - Remove specific song dari queue
+- [x] **remove** - Remove specific song dari queue
 - [ ] **move** - Move song position dalam queue
-- [ ] **loop** - Loop current song atau entire queue
+- [x] **loop** - Loop current song atau entire queue
 - [ ] **autoplay** - Auto add related songs ke queue
 - [ ] Save/load playlist functionality
 
