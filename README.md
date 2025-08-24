@@ -21,13 +21,29 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 - ✅ Base command structure
 - ✅ Basic commands (ping, help, join, leave)
 
-🚧 **Next Steps**: See [TODO.md](./TODO.md) for remaining tasks
+✅ **Phase 3: Music Streaming Core Features** - COMPLETED
+- ✅ Voice connection functionality (join/leave)
+- ✅ Music queue system with advanced management
+- ✅ Basic music commands (play, stop, pause, resume, skip, queue, nowplaying)
+
+🚧 **Phase 4: Advanced Music Features** - IN PROGRESS
+- ✅ YouTube streaming implementation
+- ✅ Search functionality
+- ✅ Volume control
+- 🚧 Advanced queue management
+- 🚧 Playlist support
 
 ## 🎯 Current Features
 
 - 🤖 **Slash Commands**: Modern Discord slash command support
+- 🎵 **Music Streaming**: Play music from YouTube with URL or search
+- 🔍 **Interactive Search**: Search YouTube with interactive song selection
+- 📋 **Queue Management**: Add, view, and manage music queue with pagination
+- ⏯️ **Playback Controls**: Play, pause, resume, skip, stop
+- 🔊 **Volume Control**: Adjust playback volume (0-100%)
+- 📺 **Rich Embeds**: Beautiful embeds with song information and thumbnails
 - 🏓 **Ping Command**: Test bot responsiveness
-- ❓ **Help Command**: List all available commands
+- ❓ **Help Command**: Categorized command listing
 - 🔊 **Voice Connection**: Join and leave voice channels
 - 📝 **Logging System**: Comprehensive logging with file output
 - 🛡️ **Error Handling**: Robust error handling and graceful degradation
@@ -91,8 +107,22 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 
 ## 🎵 Available Commands
 
+### General Commands
 - `/ping` - Check bot latency and responsiveness
 - `/help` - Show all available commands
+
+### Music Commands
+- `/play <query>` - Play music from YouTube URL or search query
+- `/search <query>` - Search for music on YouTube (interactive selection)
+- `/pause` - Pause the current song
+- `/resume` - Resume the paused song
+- `/skip` - Skip to the next song
+- `/stop` - Stop music and clear the queue
+- `/queue [page]` - Show the current music queue
+- `/nowplaying` - Show information about the currently playing song
+- `/volume [level]` - Set or view the current volume (0-100)
+
+### Voice Commands
 - `/join` - Join your voice channel
 - `/leave` - Leave the current voice channel
 

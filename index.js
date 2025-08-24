@@ -2,6 +2,7 @@ const { Client, GatewayIntentBits, Events, ActivityType } = require('discord.js'
 const config = require('./config/config');
 const logger = require('./utils/logger');
 const CommandHandler = require('./src/CommandHandler');
+const { QueueManager } = require('./src/MusicQueue');
 
 // Create a new client instance
 const client = new Client({
@@ -13,8 +14,9 @@ const client = new Client({
     ]
 });
 
-// Initialize command handler
+// Initialize command handler and queue manager
 client.commandHandler = new CommandHandler();
+client.queueManager = new QueueManager();
 
 // When the client is ready, run this code once
 client.once(Events.ClientReady, async (readyClient) => {

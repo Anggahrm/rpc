@@ -56,29 +56,29 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 - [ ] Auto disconnect saat tidak ada user di channel
 
 ### Music Queue System
-- [ ] Buat queue data structure untuk menyimpan lagu
-- [ ] Implement add to queue functionality
-- [ ] Implement queue display command
-- [ ] Implement clear queue command
-- [ ] Add queue shuffle functionality
+- [x] Buat queue data structure untuk menyimpan lagu
+- [x] Implement add to queue functionality
+- [x] Implement queue display command
+- [x] Implement clear queue command
+- [x] Add queue shuffle functionality
 
 ### Basic Music Commands
-- [ ] **play** - Play lagu dari URL atau search query
-- [ ] **stop** - Stop musik dan clear queue
-- [ ] **pause** - Pause current song
-- [ ] **resume** - Resume paused song
-- [ ] **skip** - Skip ke lagu berikutnya
-- [ ] **queue** - Tampilkan current queue
-- [ ] **nowplaying** - Tampilkan info lagu yang sedang dimainkan
+- [x] **play** - Play lagu dari URL atau search query
+- [x] **stop** - Stop musik dan clear queue
+- [x] **pause** - Pause current song
+- [x] **resume** - Resume paused song
+- [x] **skip** - Skip ke lagu berikutnya
+- [x] **queue** - Tampilkan current queue
+- [x] **nowplaying** - Tampilkan info lagu yang sedang dimainkan
 
 ## 🎧 Phase 4: Advanced Music Features
 
 ### Audio Sources
-- [ ] Implement YouTube streaming dengan ytdl-core/play-dl
+- [x] Implement YouTube streaming dengan ytdl-core/play-dl
 - [ ] Add Spotify playlist parsing (metadata only, play via YouTube)
 - [ ] Add SoundCloud streaming support
 - [ ] Add direct URL streaming (MP3, etc.)
-- [ ] Implement search functionality untuk find lagu
+- [x] Implement search functionality untuk find lagu
 
 ### Advanced Queue Management
 - [ ] **remove** - Remove specific song dari queue
@@ -88,7 +88,7 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 - [ ] Save/load playlist functionality
 
 ### Audio Controls
-- [ ] **volume** - Adjust playback volume
+- [x] **volume** - Adjust playback volume
 - [ ] **seek** - Jump ke specific time dalam lagu
 - [ ] **speed** - Adjust playback speed
 - [ ] **bassboost** - Apply audio filters
