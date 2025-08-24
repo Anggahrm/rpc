@@ -5,24 +5,24 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 ## 🏗️ Phase 1: Setup & Environment
 
 ### Project Setup
-- [ ] Inisialisasi project Node.js dengan `npm init`
-- [ ] Setup struktur folder project
-  - [ ] `src/` - Source code utama
-  - [ ] `config/` - File konfigurasi
-  - [ ] `commands/` - Command handlers
-  - [ ] `events/` - Event handlers
-  - [ ] `utils/` - Helper functions
-- [ ] Setup Git repository dan .gitignore
-- [ ] Buat file environment (.env) untuk token dan config
-- [ ] Setup package.json dengan scripts yang dibutuhkan
+- [x] Inisialisasi project Node.js dengan `npm init`
+- [x] Setup struktur folder project
+  - [x] `src/` - Source code utama
+  - [x] `config/` - File konfigurasi
+  - [x] `commands/` - Command handlers
+  - [x] `events/` - Event handlers
+  - [x] `utils/` - Helper functions
+- [x] Setup Git repository dan .gitignore
+- [x] Buat file environment (.env) untuk token dan config
+- [x] Setup package.json dengan scripts yang dibutuhkan
 
 ### Dependencies
-- [ ] Install discord.js (`npm install discord.js`)
-- [ ] Install @discordjs/voice untuk voice connection
-- [ ] Install ffmpeg-static untuk audio processing
-- [ ] Install ytdl-core untuk YouTube streaming
-- [ ] Install play-dl sebagai alternatif ytdl-core
-- [ ] Install dotenv untuk environment variables
+- [x] Install discord.js (`npm install discord.js`)
+- [x] Install @discordjs/voice untuk voice connection
+- [x] Install ffmpeg-static untuk audio processing
+- [x] Install ytdl-core untuk YouTube streaming
+- [x] Install play-dl sebagai alternatif ytdl-core
+- [x] Install dotenv untuk environment variables
 - [ ] Install eslint untuk code quality (optional)
 
 ### Discord Bot Setup
@@ -34,24 +34,24 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 ## 🤖 Phase 2: Core Bot Functionality
 
 ### Basic Bot Structure
-- [ ] Buat main bot file (index.js/app.js)
-- [ ] Implement bot login dengan token
-- [ ] Setup event listeners (ready, messageCreate, interactionCreate)
-- [ ] Buat command handler system
-- [ ] Implement error handling dan logging
+- [x] Buat main bot file (index.js/app.js)
+- [x] Implement bot login dengan token
+- [x] Setup event listeners (ready, messageCreate, interactionCreate)
+- [x] Buat command handler system
+- [x] Implement error handling dan logging
 
 ### Command System
-- [ ] Setup slash commands registration
-- [ ] Buat base command structure/class
-- [ ] Implement command loader
-- [ ] Add help command untuk list semua commands
-- [ ] Add ping command untuk test bot responsiveness
+- [x] Setup slash commands registration
+- [x] Buat base command structure/class
+- [x] Implement command loader
+- [x] Add help command untuk list semua commands
+- [x] Add ping command untuk test bot responsiveness
 
 ## 🎵 Phase 3: Music Streaming Core Features
 
 ### Voice Connection
-- [ ] Implement join voice channel functionality
-- [ ] Implement leave voice channel functionality
+- [x] Implement join voice channel functionality
+- [x] Implement leave voice channel functionality
 - [ ] Handle voice connection errors
 - [ ] Auto disconnect saat tidak ada user di channel
 
