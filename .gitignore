@@ -20,7 +20,7 @@ pids/
 *.pid
 *.seed
 *.pid.lock
-playlists/
+playlists/*.json
 
 # Coverage directory used by tools like istanbul
 coverage/

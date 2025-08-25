@@ -26,12 +26,15 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 - ✅ Music queue system with advanced management
 - ✅ Basic music commands (play, stop, pause, resume, skip, queue, nowplaying)
 
-🚧 **Phase 4: Advanced Music Features** - IN PROGRESS
+✅ **Phase 4: Advanced Music Features** - COMPLETED
 - ✅ YouTube streaming implementation
 - ✅ Search functionality
 - ✅ Volume control
-- 🚧 Advanced queue management
-- 🚧 Playlist support
+- ✅ Advanced queue management (move, remove, shuffle)
+- ✅ Playlist support (save/load/manage)
+- ✅ Audio controls (seek, speed, filters)
+- ✅ Spotify integration
+- ✅ Autoplay functionality
 
 ## 🎯 Current Features
 
@@ -87,6 +90,13 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
    DISCORD_TOKEN=your_discord_bot_token_here
    CLIENT_ID=your_discord_bot_client_id_here
    ```
+   
+   **Optional: For Spotify Integration**
+   ```
+   SPOTIFY_CLIENT_ID=your_spotify_client_id_here
+   SPOTIFY_CLIENT_SECRET=your_spotify_client_secret_here
+   ```
+   Get these from [Spotify Developer Dashboard](https://developer.spotify.com/dashboard)
 
 4. **Deploy slash commands**
    ```bash
