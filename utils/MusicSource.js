@@ -97,6 +97,30 @@ class MusicSource {
         }
         return `${minutes}:${secs.toString().padStart(2, '0')}`;
     }
+
+    static async getRelatedVideos(url, limit = 5) {
+        try {
+            if (!ytdl.validateURL(url)) {
+                return [];
+            }
+
+            const info = await ytdl.getInfo(url);
+            const videoId = info.videoDetails.videoId;
+            
+            // Use the video title and artist for related search
+            const searchQuery = `${info.videoDetails.title} ${info.videoDetails.author.name}`;
+            const results = await this.search(searchQuery, limit + 5); // Get more to filter out the current song
+            
+            // Filter out the current song and return the requested amount
+            return results
+                .filter(video => !video.url.includes(videoId))
+                .slice(0, limit);
+                
+        } catch (error) {
+            logger.error(`Failed to get related videos for ${url}: ${error.message}`);
+            return [];
+        }
+    }
 }
 
 module.exports = MusicSource;

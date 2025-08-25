@@ -11,6 +11,13 @@ class MusicQueue {
         this.repeat = 'none'; // 'none', 'song', 'queue'
         this.voiceConnection = null;
         this.audioPlayer = null;
+        this.currentSeekTime = 0;
+        this.playbackSpeed = 1.0; // 1.0 = normal speed
+        this.audioFilters = {
+            bassboost: false,
+            equalizer: 'none' // 'none', 'pop', 'rock', 'jazz', 'classical'
+        };
+        this.autoplay = false;
     }
 
     // Add song to queue
@@ -90,6 +97,31 @@ class MusicQueue {
             this.songs.unshift(currentSong);
             this.currentIndex = 0;
         }
+    }
+
+    // Move song from one position to another
+    moveSong(fromIndex, toIndex) {
+        if (fromIndex < 0 || fromIndex >= this.songs.length || 
+            toIndex < 0 || toIndex >= this.songs.length) {
+            return null;
+        }
+
+        // Don't allow moving the currently playing song
+        if (fromIndex === this.currentIndex) {
+            return null;
+        }
+
+        const song = this.songs.splice(fromIndex, 1)[0];
+        this.songs.splice(toIndex, 0, song);
+
+        // Adjust current index if necessary
+        if (fromIndex < this.currentIndex && toIndex >= this.currentIndex) {
+            this.currentIndex--;
+        } else if (fromIndex > this.currentIndex && toIndex <= this.currentIndex) {
+            this.currentIndex++;
+        }
+
+        return song;
     }
 
     // Get queue display info

@@ -75,24 +75,24 @@ Daftar tugas lengkap untuk membuat bot Discord untuk streaming musik.
 
 ### Audio Sources
 - [x] Implement YouTube streaming dengan ytdl-core/play-dl
-- [ ] Add Spotify playlist parsing (metadata only, play via YouTube)
+- [x] Add Spotify playlist parsing (metadata only, play via YouTube)
 - [ ] Add SoundCloud streaming support
 - [ ] Add direct URL streaming (MP3, etc.)
 - [x] Implement search functionality untuk find lagu
 
 ### Advanced Queue Management
 - [x] **remove** - Remove specific song dari queue
-- [ ] **move** - Move song position dalam queue
+- [x] **move** - Move song position dalam queue
 - [x] **loop** - Loop current song atau entire queue
-- [ ] **autoplay** - Auto add related songs ke queue
-- [ ] Save/load playlist functionality
+- [x] **autoplay** - Auto add related songs ke queue
+- [x] Save/load playlist functionality
 
 ### Audio Controls
 - [x] **volume** - Adjust playback volume
-- [ ] **seek** - Jump ke specific time dalam lagu
-- [ ] **speed** - Adjust playback speed
-- [ ] **bassboost** - Apply audio filters
-- [ ] **equalizer** - Audio equalizer controls
+- [x] **seek** - Jump ke specific time dalam lagu
+- [x] **speed** - Adjust playback speed
+- [x] **bassboost** - Apply audio filters
+- [x] **equalizer** - Audio equalizer controls
 
 ## 🎮 Phase 5: User Experience & Interface
 

@@ -42,7 +42,13 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 - ⏯️ **Playback Controls**: Play, pause, resume, skip, stop with real-time status
 - 🔊 **Volume Control**: Adjust playback volume (0-100%)
 - 🎛️ **Loop Modes**: Loop current song, entire queue, or disable looping
-- 🗑️ **Queue Editing**: Remove specific songs, clear queue, shuffle songs
+- 🗑️ **Queue Editing**: Remove specific songs, clear queue, shuffle songs, move songs
+- ⏩ **Seek Control**: Jump to specific timestamps in songs
+- ⚡ **Speed Control**: Adjust playback speed (0.25x to 2.0x)
+- 🎛️ **Audio Filters**: Bass boost and equalizer presets (pop, rock, jazz, classical)
+- 🎧 **Spotify Integration**: Import Spotify playlists and tracks (plays via YouTube)
+- 🔄 **Autoplay**: Automatically add related songs when queue ends
+- 💾 **Playlist Management**: Save, load, and manage custom playlists
 - 📊 **Statistics**: Bot usage stats and performance monitoring
 - 🤖 **Auto-Disconnect**: Automatically leaves when alone in voice channel
 - 📺 **Rich Embeds**: Beautiful embeds with song information and thumbnails
@@ -119,6 +125,7 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 ### Music Commands
 - `/play <query>` - Play music from YouTube URL or search query
 - `/search <query>` - Search for music on YouTube (interactive selection)
+- `/spotify <url>` - Add Spotify playlist or track to queue (plays via YouTube)
 - `/pause` - Pause the current song
 - `/resume` - Resume the paused song
 - `/skip` - Skip to the next song
@@ -130,6 +137,16 @@ Bot Discord untuk streaming musik dengan fitur lengkap.
 - `/shuffle` - Shuffle the music queue
 - `/loop [mode]` - Toggle loop mode (off/song/queue)
 - `/remove <position>` - Remove a specific song from queue
+- `/move <from> <to>` - Move a song to a different position in queue
+- `/seek <time>` - Jump to specific time in current song (e.g., 1:30)
+- `/speed [rate]` - Adjust playback speed (0.25x to 2.0x)
+- `/bassboost [enable]` - Toggle bass boost audio filter
+- `/equalizer [preset]` - Apply equalizer presets (pop, rock, jazz, classical)
+- `/autoplay [enable]` - Toggle autoplay for related songs
+- `/playlist save <name>` - Save current queue as a playlist
+- `/playlist load <name>` - Load a saved playlist
+- `/playlist list` - List all saved playlists
+- `/playlist delete <name>` - Delete a saved playlist
 
 ### Voice Commands
 - `/join` - Join your voice channel
