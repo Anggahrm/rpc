@@ -3,6 +3,7 @@ const { Client, RichPresence} = require('discord.js-selfbot-v13');
 const client = new Client();
 
 const fileNames = [
+  'main.js',
   'server.js',
   'index.js', 
   'config.js',
