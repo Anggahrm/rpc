@@ -1,13 +1,13 @@
 # Discord RPC Client
 
-A Discord Rich Presence client for osu! game status.
+A Discord Custom Rich Presence client
 
 ## Setup
 
 1. Clone this repository
-2. Install dependencies:
+2. Install Bun:
    ```bash
-   npm install
+   npm i -g bun
    ```
 
 3. Copy the environment variables template:
@@ -15,19 +15,14 @@ A Discord Rich Presence client for osu! game status.
    cp .env.example .env
    ```
 
-4. Edit `.env` file and replace `your_discord_token_here` with your actual Discord bot token:
+4. Edit `.env` file and replace `your_discord_token_here` with your actual Discord token:
    ```
-   DISCORD_TOKEN=your_actual_discord_bot_token_here
+   DISCORD_TOKEN=your_actual_discord_token_here
    ```
 
 ## Usage
 
 Run the application:
-```bash
-npm start
-```
-
-Or if you prefer using Bun:
 ```bash
 bun rpc.js
 ```
