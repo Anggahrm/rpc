@@ -35,7 +35,7 @@ async function updatePresence() {
   const currentFile = getRandomFile();
   console.log(`Now editing: ${currentFile}`);
   
-  const presence = new Discord.RichPresence()
+  const presence = new Discord.RichPresence(client)
     .setApplicationId('1380551344515055667')
     .setType('PLAYING')
     .setState('Workspace: ZumyNext')
