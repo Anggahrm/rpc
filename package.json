@@ -1,0 +1,16 @@
+{
+  "name": "rpc",
+  "version": "1.0.0",
+  "description": "A Discord Custom Rich Presence client",
+  "main": "rpc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js-selfbot-v13": "^3.7.0",
+    "dotenv": "^17.2.1"
+  }
+}
