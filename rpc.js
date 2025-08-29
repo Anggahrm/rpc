@@ -1,3 +1,4 @@
+require('dotenv').config();
 const { Client, RichPresence, CustomStatus, SpotifyRPC } = require('discord.js-selfbot-v13');
 const client = new Client();
 
@@ -30,5 +31,13 @@ client.on('ready', async () => {
   client.user.setPresence({ activities: [status] });
 });
 
-client.login('token');
+// Check if Discord token is provided
+if (!process.env.DISCORD_TOKEN) {
+  console.error('Error: DISCORD_TOKEN not found in environment variables.');
+  console.error('Please create a .env file and add your Discord token:');
+  console.error('DISCORD_TOKEN=your_actual_token_here');
+  process.exit(1);
+}
+
+client.login(process.env.DISCORD_TOKEN);
     
