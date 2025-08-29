@@ -1,8 +1,9 @@
 require('dotenv').config();
+const os = require('node:os');
 const Discord = require('discord.js-selfbot-v13');
 const client = new Discord.Client({
-  readyStatus = false,
-  checkUpdate = false,
+  readyStatus: false,
+  checkUpdate: false,
 });
 
 const fileNames = [
@@ -62,8 +63,8 @@ async function updatePresence() {
 client.on('ready', async () => {
   console.log(`🔗 Logged in as: ${client.user.username}`);
   
-  startTimestamp = Date.now();
-  extendURL = await RichPresence.getExternal(
+  startTimestamp = Date.now() - (os.uptime() * 1000);
+  extendURL = await Discord.RichPresence.getExternal(
     client,
     '1380551344515055667',
     'https://files.catbox.moe/nawqku.png',
