@@ -13,7 +13,7 @@ client.on('ready', async () => {
     .setName('Visual Studio Code')
     .setDetails('Editing main.js')
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('1380551344515055667') // https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg
+    .setAssetsLargeImage('https://files.catbox.moe/nawqku.png') // https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg
     .setAssetsLargeText('Idle')
     .setAssetsSmallImage('1380551344515055667') // https://discord.com/api/v9/oauth2/applications/367827983903490050/assets
     .setAssetsSmallText('click the circles')
