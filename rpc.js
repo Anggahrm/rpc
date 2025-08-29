@@ -4,6 +4,11 @@ const client = new Client();
 
 client.on('ready', async () => {
   console.log(`${client.user.username} is ready!`);
+const getExtendURL = await RichPresence.getExternal(
+    client,
+    '1380551344515055667',
+    'https://files.catbox.moe/nawqku.png', // Required if the image you use is not in Discord
+  );
 
   const status = new RichPresence(client)
     .setApplicationId('1380551344515055667')
@@ -13,9 +18,9 @@ client.on('ready', async () => {
     .setName('Visual Studio Code')
     .setDetails('Editing main.js')
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('https://files.catbox.moe/nawqku.png') // https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg
+    .setAssetsLargeImage('getExtendURL[0].external_asset_path') // https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg
     .setAssetsLargeText('Idle')
-    .setAssetsSmallImage('1380551344515055667') // https://discord.com/api/v9/oauth2/applications/367827983903490050/assets
+    .setAssetsSmallImage('1410828428390957136') // https://discord.com/api/v9/oauth2/applications/367827983903490050/assets
     .setAssetsSmallText('click the circles')
     .setPlatform('desktop')
     .addButton('Community', 'https://discord.gg/W9qD2mYXxf');
@@ -23,11 +28,8 @@ client.on('ready', async () => {
   client.user.setPresence({ activities: [status] });
 });
 
-// Check if Discord token is provided
 if (!process.env.DISCORD_TOKEN) {
   console.error('Error: DISCORD_TOKEN not found in environment variables.');
-  console.error('Please create a .env file and add your Discord token:');
-  console.error('DISCORD_TOKEN=your_actual_token_here');
   process.exit(1);
 }
 
