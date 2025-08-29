@@ -19,7 +19,7 @@ const getExtendURL = await RichPresence.getExternal(
     .setStartTimestamp(Date.now())
     .setAssetsLargeImage(getExtendURL[0].external_asset_path) // https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg
     .setAssetsLargeText('JavaScript')
-    .setAssetsSmallImage(getExtendURL[0].extract_asset_path) // https://discord.com/api/v9/oauth2/applications/367827983903490050/assets
+    .setAssetsSmallImage('https://cdn.discordapp.com/emojis/1410862047998246942.webp') // https://discord.com/api/v9/oauth2/applications/367827983903490050/assets
     .setAssetsSmallText('Visual Studio Code')
     .setPlatform('desktop')
     .addButton('Community', 'https://discord.gg/W9qD2mYXxf');
