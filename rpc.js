@@ -7,7 +7,7 @@ client.on('ready', async () => {
   const getExtendURL = await RichPresence.getExternal(
     client,
     '1380551344515055667',
-    //'https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg', // Required if the image you use is not in Discord
+    'https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg', // Required if the image you use is not in Discord
   );
   const status = new RichPresence(client)
     .setApplicationId('1380551344515055667')
