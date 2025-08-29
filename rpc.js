@@ -1,6 +1,9 @@
 require('dotenv').config();
-const { Client, RichPresence} = require('discord.js-selfbot-v13');
-const client = new Client();
+const Discord = require('discord.js-selfbot-v13');
+const client = new Discord.Client({
+  readyStatus = false,
+  checkUpdate = false,
+});
 
 const fileNames = [
   'main.js',
@@ -31,7 +34,7 @@ async function updatePresence() {
   const currentFile = getRandomFile();
   console.log(`Now editing: ${currentFile}`);
   
-  const status = new RichPresence(client)
+  const presence = new Discord.RichPresence()
     .setApplicationId('1380551344515055667')
     .setType('PLAYING')
     .setState('Workspace: ZumyNext')
@@ -45,7 +48,7 @@ async function updatePresence() {
     .setPlatform('desktop')
     .addButton('Community', 'https://discord.gg/W9qD2mYXxf');
   
-  client.user.setPresence({ activities: [status] });
+  client.user.setPresence({ activities: [presence], status: "idle", });
   
   const nextInterval = getRandomInterval();
   console.log(`Next update in ${nextInterval / 60000} minutes`);
@@ -57,7 +60,7 @@ async function updatePresence() {
 }
 
 client.on('ready', async () => {
-  console.log(`${client.user.username} is ready!`);
+  console.log(`🔗 Logged in as: ${client.user.username}`);
   
   startTimestamp = Date.now();
   extendURL = await RichPresence.getExternal(
