@@ -13,15 +13,14 @@ const getExtendURL = await RichPresence.getExternal(
   const status = new RichPresence(client)
     .setApplicationId('1380551344515055667')
     .setType('PLAYING')
-    .setURL('https://www.youtube.com/watch?v=5icFcPkVzMg') // If you set a URL, it will automatically change to STREAMING type
     .setState('Workspace: ZumyNext')
     .setName('Visual Studio Code')
     .setDetails('Editing main.js')
     .setStartTimestamp(Date.now())
-    .setAssetsLargeImage('getExtendURL[0].external_asset_path') // https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg
-    .setAssetsLargeText('Idle')
-    .setAssetsSmallImage('1410828428390957136') // https://discord.com/api/v9/oauth2/applications/367827983903490050/assets
-    .setAssetsSmallText('click the circles')
+    .setAssetsLargeImage(getExtendURL[0].external_asset_path) // https://assets.ppy.sh/beatmaps/1550633/covers/list.jpg
+    .setAssetsLargeText('JavaScript')
+    .setAssetsSmallImage(getExtendURL[0].extract_asset_path) // https://discord.com/api/v9/oauth2/applications/367827983903490050/assets
+    .setAssetsSmallText('Visual Studio Code')
     .setPlatform('desktop')
     .addButton('Community', 'https://discord.gg/W9qD2mYXxf');
   
